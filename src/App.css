@@ -159,8 +159,6 @@ h1 {
     max-width:425px;
   }
 
-
-
   .container {
     background-color: #0F1014;
     padding-top: 80px;
@@ -174,7 +172,6 @@ h1 {
   .movie-title {
   margin: 0;
   width: 280px;
-
   justify-content: center;
   align-items: center;
   }
@@ -187,7 +184,6 @@ h1 {
   h5.movie-title{
     width: 280px;
     font-size: medium ;
-    
   }
 
   .poster{
@@ -196,15 +192,17 @@ h1 {
     background-repeat: no-repeat;
   }
 
-
   main {
     width:405px;
   }
-  .App ,.caro {
+
+  .App {
     max-width: fit-content;
     width: 425px;
   }
 
-
+   .caro{
+  width: 425px;
+  }
 
 }
