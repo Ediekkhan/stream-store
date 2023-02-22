@@ -77,7 +77,7 @@ function App() {
     fetchMovie(movie.id);
     setPlaying(false);
     setMovie(movie);
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   };
 
   const renderMovies = () =>
@@ -91,7 +91,7 @@ function App() {
 
   return (
     <div className="App bg-black text-white">
-      <div>
+      <div className="caro"> 
         <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
           <Carousel.Item 
           className="poster"
@@ -104,20 +104,6 @@ function App() {
               <p>{movie.overview}</p>
             </Carousel.Caption>
           </Carousel.Item>
-{/* 
-          <Carousel.Item 
-          className="poster"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})`,
-            width:"max-content",
-          }}
-          >
-            
-            <Carousel.Caption>
-              <h3>{movie.title}</h3>
-              <p>{movie.overview}</p>
-            </Carousel.Caption>
-          </Carousel.Item> */}
 
           <Carousel.Item 
           className="poster"
