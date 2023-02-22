@@ -99,17 +99,12 @@ function App() {
             backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})`,
           }}
           >
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
-            />
             <Carousel.Caption>
               <h3>{movie.title}</h3>
               <p>{movie.overview}</p>
             </Carousel.Caption>
           </Carousel.Item>
-
+{/* 
           <Carousel.Item 
           className="poster"
           style={{
@@ -122,18 +117,15 @@ function App() {
               <h3>{movie.title}</h3>
               <p>{movie.overview}</p>
             </Carousel.Caption>
-          </Carousel.Item>
+          </Carousel.Item> */}
+
           <Carousel.Item 
           className="poster"
           style={{
             backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})`,
           }}
           >
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
-            />
+           
             <Carousel.Caption>
               <h3>{movie.title}</h3>
               <p>{movie.overview}</p>
