@@ -4,6 +4,7 @@
 body {
   background-color: #090A0E;
   color: #ffffff;
+  color: black;
 }
 
 .center-max-size {
@@ -96,6 +97,8 @@ h1 {
   cursor: pointer;
   text-align: left;
   font-size: 16px;
+  width: 250px;
+  justify-content: center;
 }
 
 .movie img {
@@ -109,11 +112,12 @@ h1 {
 
 .movie-title {
   margin: 0;
+  width: 250px;
 }
 
 .movie-voting {
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 5px;
   background-color: #0F1014;
   border: 1px solid gray;
@@ -140,9 +144,64 @@ h1 {
 .submit-search {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: -2px;
   background-color: transparent;
   color:  white;
   border: none;
   cursor: pointer;
+}
+
+
+@media (max-width : 768px) {
+  *{
+    margin: 0;
+    padding: 0;
+    max-width:425px;
+  }
+
+
+
+  .container {
+    background-color: #0F1014;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie-title {
+  margin: 0;
+  width: 280px;
+
+  justify-content: center;
+  align-items: center;
+  }
+
+  img {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h5.movie-title{
+    width: 280px;
+    font-size: medium ;
+    
+  }
+
+  .poster{
+    /* width: 320px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  main {
+    width:405px;
+  }
+  .App{
+    max-width: fit-content;
+  }
+
 }

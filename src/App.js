@@ -90,7 +90,7 @@ function App() {
     // }
 
   return (
-    <div className="App">
+    <div className="App bg-black text-white">
       <div>
         <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
           <Carousel.Item 
@@ -114,13 +114,10 @@ function App() {
           className="poster"
           style={{
             backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})`,
+            width:"max-content",
           }}
           >
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
-            />
+            
             <Carousel.Caption>
               <h3>{movie.title}</h3>
               <p>{movie.overview}</p>
@@ -154,13 +151,13 @@ function App() {
             id="search"
             onInput={(event) => setSearchKey(event.target.value)}
           />
-          <button className="submit-search btn " type="submit">
+          <button className="submit-search btn btn-close-primary " type="submit">
             Search
           </button>
         </form>
       </header>
       {movies.length ? (
-        <main>
+        <main  className="bg-dark">
           {movie ? (
             <div
               className="poster"
@@ -210,15 +207,15 @@ function App() {
                     ) : (
                       "Sorry, no trailer available"
                     )}
-                    <h1>{movie.title}</h1>
-                    <p>{movie.overview}</p>
+                    <h1 className="text-white">{movie.title}</h1>
+                    <p className="text-white">{movie.overview}</p>
                   </div>
                 </div>
               )}
             </div>
           ) : null}
 
-          <div className={"center-max-size container"}>{renderMovies()}</div>
+          <div className={"center-max-size container text-white"}>{renderMovies()}</div>
         </main>
       ) : (
         "Sorry, no movies found"
